@@ -1,2 +1,28 @@
 @import url(/node_modules/bootstrap-icons/font/bootstrap-icons.css);
 @import 'custom';
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+main {
+    margin-bottom: 500px;
+}
+footer.footer {
+    padding-left:24px;
+    padding-right:24px;
+    padding-bottom: 36px;
+    padding-top: 36px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+footer.footer-title {
+    padding-bottom: 16px;
+}
+footer.font {
+    font-family: $font-family-sans-serif;
+}
+p {
+    font-family: $font-family-serif;
+}
