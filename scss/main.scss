@@ -5,6 +5,10 @@ html {
     position: relative;
     min-height: 100%;
 }
+p {
+    font-family: $font-family-serif;
+    font-size: 18px;
+}
 main {
     margin-bottom: 500px;
 }
@@ -23,6 +27,67 @@ footer.footer-title {
 footer.font {
     font-family: $font-family-sans-serif;
 }
-p {
+.home {
+    font-family: $font-family-sans-serif;
+    font-size: 20px;
+    margin-left: 26px;
+}
+
+.hero-scene {
+    position: relative;
+    &::before {
+        content: "";
+        position:absolute;
+        height: 240px;
+        width: 100%;
+        background-image: url(../Images/chat.jpg);
+        background-position: center;
+        background-size: cover;
+        filter: brightness(0.5);
+    }
+    *{
+        position: relative;
+    }
+    .hero-scene-content {
+    padding-top: 25px;
+    padding-left: 24px;
+    padding-right: 24px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .hero-scene {
+        &::before {
+            height: 950px;
+        }
+        .hero-scene-content {
+            padding-top: 305.5px;
+            padding-left: 116px;
+            padding-right: 104px;
+            height: 1400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-content: flex-start;
+            flex-wrap: wrap;
+            align-items: flex-start;
+        }
+        .font-hero{
+            font-size: 96px;
+        }
+        .font-hero-button{
+            font-size: 20px;
+        }
+    }
+}
+.custom-button-mobile {
     font-family: $font-family-serif;
+    font-size: 10px;
 }
