@@ -12000,7 +12000,6 @@ footer.font {
 
 .home {
   font-family: "Jomolhari", sans-serif;
-  font-size: 20px;
   margin-left: 26px;
 }
 
@@ -12033,6 +12032,39 @@ footer.font {
   align-items: flex-start;
 }
 
+.custom-button {
+  font-family: "Inter", serif;
+  font-size: 10px;
+}
+
+.margin-content-title {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.img-size {
+  width: 514px;
+  height: 317px;
+  margin-bottom: 24px;
+  margin-right: 64px;
+}
+
+.margin-article {
+  margin-left: 24px;
+  margin-right: 24px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.font-head {
+  font-family: "Jomolhari", sans-serif;
+  font-size: 30px;
+}
+
+.font-content {
+  font-family: "Inter", serif;
+}
+
 @media only screen and (min-width: 992px) {
   .hero-scene::before {
     height: 950px;
@@ -12041,7 +12073,7 @@ footer.font {
     padding-top: 305.5px;
     padding-left: 116px;
     padding-right: 104px;
-    height: 1400px;
+    height: 950px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -12055,8 +12087,21 @@ footer.font {
   .hero-scene .font-hero-button {
     font-size: 20px;
   }
-}
-.custom-button-mobile {
-  font-family: "Inter", serif;
-  font-size: 10px;
+  .margin-article {
+    margin-left: 116px;
+    margin-right: 116px;
+    margin-top: 64px;
+    margin-bottom: 64px;
+  }
+  .margin-content {
+    padding-left: 64px;
+  }
+  .img-size {
+    width: 544px;
+    height: 317px;
+  }
+  .margin-content-title {
+    margin-top: 64px;
+    margin-bottom: 64px;
+  }
 }/*# sourceMappingURL=main.css.map */
