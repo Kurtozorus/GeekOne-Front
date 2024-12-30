@@ -1,0 +1,102 @@
+<div class="galerie">
+    <div id="carouselExampleIndicators" class="carousel slide galerie-scene">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/Images/cod6.webp" class="d-block w-100 first" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="/Images/fc25.webp" class="d-block w-100 second" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="/Images/dbz.jpg" class="d-block w-100 third" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon text-bg-dark" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon text-bg-dark" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+</div>
+<section>
+    <button class="btn btn-primary" onclick="createCard()">Display</button>
+    <div class="margin-content-title">
+        <h2 class="text-center font-head text-decoration-underline">Section Jeux vidéo</h2>
+    </div>
+    <article>
+        <div>
+            <h3 class="margin-article text-decoration-underline">Nouveauté!</h3>
+        </div>
+        <div class="container">
+            <div class="text-center">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#EditionPhotoModal">Ajouter un jeux vidéo</button>
+            </div>
+            <div class="row row-cols-3 row-cols-sm-3 row-cols-lg-5" id="allImages">
+
+                <div class="text-center"></div>
+            </div>
+        </div>
+        <!-- Modal Edition -->
+        <div class="modal fade" id="EditionPhotoModal" tabindex="-1" aria-labelledby="EditionPhotoModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title fs-5" id="EditionPhotoModalLabel">Edidter une carte jeu</h2>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="NamePhotoInput" class="form-label">Titre</label>
+                                <input type="titre" class="form-control" id="NamePhotoInput" placeholder="Call of Duty">
+                            </div>
+                            <div class="mb-3">
+                                <label for="ImageInput" class="form-label">Image</label>
+                                <input type="file" class="form-control" id="ImageInput">
+                            </div>
+                            <div class="mb-3">
+                                <label for="PricePhotoInput" class="form-label">Prix</label>
+                                <input type="prix" class="form-control" id="PricePhotoInput" placeholder="59,99 €">
+                            </div>
+                            <div class="text-center">
+                                <button  class="btn btn-primary" id="createCard">Enregistrer</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Suppression -->
+        <div class="modal fade" id="DeletePhotoModal" tabindex="-1" aria-labelledby="DeletePhotoModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title fs-5" id="DeletePhotoModalLabel">Etes vous sur de vouloir supprimer cette photo ?</h2>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <p>Titre</p>
+                                <img src"./images/fc25.webp" class="rounded w-100">
+                            </div>
+                            <div class="text-center">
+                                <button type="button" class="btn btn-danger">Supprimer</button>
+                                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Annuler</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+</article>
+</section>

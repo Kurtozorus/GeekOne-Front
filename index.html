@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="scss/main.css" />
     <title>GeekOne</title>
   </head>
+
   <body>
     <header>
       <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
@@ -37,7 +38,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"
+                <a class="nav-link active" aria-current="page" href="/"
                   >Acceuil</a
                 >
               </li>
@@ -52,16 +53,28 @@
                   Jeux vidéo
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Nouveauté</a></li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li><a class="dropdown-item" href="#">Jeux de la PS5</a></li>
                   <li>
-                    <a class="dropdown-item" href="#"
+                    <a class="dropdown-item" href="/galerie-jeux-video">
+                      Galerie jeux vidéo</a
+                    >
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/jeux-ps5">
+                      Jeux de la PS5</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/jeux-xbox"
                       >Jeux de la Xbox série s/x</a
                     >
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">Jeux de la Switch</a>
+                    <a class="dropdown-item" href="/jeux-switch"
+                      >Jeux de la Switch</a
+                    >
                   </li>
                 </ul>
               </li>
@@ -76,13 +89,14 @@
                   Jeux de société
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Jeu de carte</a></li>
                   <li>
-                    <a class="dropdown-item" href="#">Les incontournables</a>
+                    <a class="dropdown-item" href="/jeux-de-carte"
+                      >Jeu de carte</a
+                    >
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#"
-                      >Les jeux a dépoussiérer</a
+                    <a class="dropdown-item" href="/Les-incontournables"
+                      >Les incontournables</a
                     >
                   </li>
                 </ul>
@@ -98,9 +112,17 @@
                   Manga
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Nouveauté</a></li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li><a class="dropdown-item" href="#">Nos mangas</a></li>
+                  <li>
+                    <a class="dropdown-item" href="/galerie-mangas"
+                      >Nouveauté</a
+                    >
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/Les-mangas">Nos mangas</a>
+                  </li>
                 </ul>
               </li>
               <li class="nav-item">
@@ -125,14 +147,14 @@
     </header>
     <main id="main-page"></main>
     <footer class="bg-dark text-white align-items-start footer">
-      <div class="row ">
+      <div class="row">
         <div class="col-12">
           <h3 class="text-primary font footer-title">GeekOne</h3>
+          <br>
         </div>
       </div>
-      <div class="row ">
+      <div class="row">
         <div class="col-12 col-md-4">
-          <br>
           <p class="text-secondary footer-title">HORAIRES</p>
           <p>Du Lundi au samedi</p>
           <p>9:00 - 12:00 14:00 - 19:00</p>
@@ -147,9 +169,9 @@
           <p>GeekOne, 10 rue du pécheur 26100 Romans</p>
         </div>
       </div>
-      
     </footer>
     <script type="module" src="Router/router.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/galerie-jeux-video.js"></script>
   </body>
 </html>
