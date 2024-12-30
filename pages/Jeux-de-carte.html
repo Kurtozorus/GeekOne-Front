@@ -85,75 +85,6 @@
   <article>
     <div class="container">
       <div class="row row-cols-3 row-cols-sm-3 row-cols-lg-5">
-        <div class="col mb-3">
-          <div class="card bg-secondary card-width">
-            <img
-              src="/Images/10cartepokemonepee.jpg"
-              class="card-img-top"
-              alt="..."
-            />
-            <div
-              class="card-body d-flex flex-row d-flex justify-content-between"
-            >
-              <button
-                type="button"
-                class="btn btn-primary dimension"
-                data-bs-toggle="modal"
-                data-bs-target="#InfoModal"
-              >
-                Info
-              </button>
-              <!-- Modal -->
-              <div
-                class="modal fade"
-                id="InfoModal"
-                tabindex="-1"
-                aria-labelledby="InfoModal"
-                aria-hidden="true"
-              >
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h1 class="modal-title fs-5" id="InfoModal">
-                        Carte pokemon épée x10
-                      </h1>
-                      <button
-                        type="button"
-                        class="btn-close"
-                        data-bs-dismiss="modal"
-                        aria-label="Close"
-                      ></button>
-                    </div>
-                    <div class="modal-body">
-                      <img
-                        src="/Images/10cartepokemonepee.jpg"
-                        alt=""
-                        class="modal-img mb-3 img-card"
-                      />
-                      <p>Carte pokemon épée x10</p>
-                    </div>
-                    <div class="modal-footer">
-                      <button
-                        type="button"
-                        class="btn btn-secondary"
-                        data-bs-dismiss="modal"
-                      >
-                        Close
-                      </button>
-                      <button type="button" class="btn btn-primary">
-                        Réserver
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div id="disponibilite">
-                <img src="/Images/pointvert.png" class="img" alt="disponible" />
-              </div>
-              <p>69€</p>
-            </div>
-          </div>
-        </div>
         <div class="col">
           <div class="card bg-secondary card-width">
             <img
@@ -172,7 +103,7 @@
               >
                 Info
               </button>
-              <!-- Modal -->
+              <!-- Modal Reservation -->
               <div
                 class="modal fade"
                 id="InfoModal1"
@@ -183,9 +114,7 @@
                 <div class="modal-dialog">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h1 class="modal-title fs-5" id="InfoModal1">
-                        Deck Pokemon Evolution
-                      </h1>
+                      <h2 class="modal-title fs-5" id="InfoModal1">Réserver</h2>
                       <button
                         type="button"
                         class="btn-close"
@@ -194,66 +123,49 @@
                       ></button>
                     </div>
                     <div class="modal-body">
-                      <img
-                        src="/Images/deckpokemonevo.jpg"
-                        alt=""
-                        class="modal-img mb-3 img-card"
-                      />
-                      <p>
-                        Pokemon XY12 "Evolutions" Boite De 36 Boosters = 360
-                        Cartes pour Pokemon TCG (Anglais).
-                      </p>
-                    </div>
-                    <div class="modal-footer">
-                      <button
-                        type="button"
-                        class="btn btn-secondary"
-                        data-bs-dismiss="modal"
-                      >
-                        Close
-                      </button>
-                      <button type="button" class="btn btn-primary">
-                        Réserver
-                      </button>
+                      <form>
+                        <div class="mb-3">
+                          <p>Pokemon Evolutions</p>
+                          <img
+                            src="../images/deckpokemonevo.jpg"
+                            class="rounded w-100"
+                          />
+                        </div>
+                        <p>
+                          Pokemon XY12 "Evolutions" Boite De 36 Boosters = 360
+                          Cartes pour Pokemon TCG (Anglais).
+                        </p>
+                        <div class="text-center">
+                          <button type="button" class="btn btn-success">
+                            Réserver
+                          </button>
+                          <button
+                            type="button"
+                            class="btn btn-primary"
+                            data-bs-dismiss="modal"
+                          >
+                            Annuler
+                          </button>
+                        </div>
+                      </form>
                     </div>
                   </div>
                 </div>
               </div>
-              <div id="disponibilite">
-                <img src="/Images/pointvert.png" class="img" alt="disponible" />
-              </div>
-              <p>69€</p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card bg-secondary card-width">
-            <img src="/Images/dbzmini.webp" class="card-img-top" alt="..." />
-            <div
-              class="card-body d-flex flex-row d-flex justify-content-between"
-            >
-              <button
-                type="button"
-                class="btn btn-primary dimension"
-                data-bs-toggle="modal"
-                data-bs-target="#InfoModal2"
-              >
-                Info
-              </button>
-              <!-- Modal -->
+              <!-- Modal Modication -->
               <div
                 class="modal fade"
-                id="InfoModal2"
+                id="ModifierModal"
                 tabindex="-1"
-                aria-labelledby="InfoModal2"
+                aria-labelledby="ModifierModal"
                 aria-hidden="true"
               >
                 <div class="modal-dialog">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h1 class="modal-title fs-5" id="InfoModal2">
-                        Dragon ball Z spark zero
-                      </h1>
+                      <h2 class="modal-title fs-5" id="ModifierModal">
+                        Voulez-vous modifier cette photo ?
+                      </h2>
                       <button
                         type="button"
                         class="btn-close"
@@ -262,65 +174,86 @@
                       ></button>
                     </div>
                     <div class="modal-body">
-                      <img
-                        src="/Images/dbzmini.webp"
-                        alt=""
-                        class="modal-img mb-3 img-card"
-                      />
-                      <p>
-                        ZERO est la première entrée dans la série DRAGON BALL Z:
-                        BUDOKAI TENKAICHI en 15 ans et sortira le 11 octobre
-                        2024 sur PlayStation 5, Xbox Series X|S et PC. Le jeu
-                        est disponible en précommande numérique et physique
-                      </p>
-                    </div>
-                    <div class="modal-footer">
-                      <button
-                        type="button"
-                        class="btn btn-secondary"
-                        data-bs-dismiss="modal"
-                      >
-                        Close
-                      </button>
-                      <button type="button" class="btn btn-primary">
-                        Réserver
-                      </button>
+                      <form>
+                        <div class="mb-3">
+                          <p>Titre</p>
+                          <img
+                            src="../images/deckpokemonevo.jpg"
+                            class="rounded w-100"
+                          />
+                        </div>
+                        <p>
+                          Pokemon XY12 "Evolutions" Boite De 36 Boosters = 360
+                          Cartes pour Pokemon TCG (Anglais).
+                        </p>
+                        <div class="text-center">
+                          <button type="button" class="btn btn-danger">
+                            Supprimer
+                          </button>
+                          <button
+                            type="button"
+                            class="btn btn-primary"
+                            data-bs-dismiss="modal"
+                          >
+                            Annuler
+                          </button>
+                        </div>
+                      </form>
                     </div>
                   </div>
                 </div>
               </div>
-              <div id="disponibilite">
-                <img src="/Images/pointvert.png" class="img" alt="disponible" />
+              <!-- Modal Suppression -->
+              <div
+                class="modal fade"
+                id="SupprimerModal1"
+                tabindex="-1"
+                aria-labelledby="SupprimerModal1"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h2 class="modal-title fs-5" id="SupprimerModal1">
+                        Etes vous sur de vouloir supprimer cette photo ?
+                      </h2>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <form>
+                        <div class="mb-3">
+                          <p>Titre</p>
+                          <img
+                            src="../images/deckpokemonevo.jpg"
+                            class="rounded w-100"
+                          />
+                        </div>
+                        <p>
+                          Pokemon XY12 "Evolutions" Boite De 36 Boosters = 360
+                          Cartes pour Pokemon TCG (Anglais).
+                        </p>
+                        <div class="text-center">
+                          <button type="button" class="btn btn-danger">
+                            Supprimer
+                          </button>
+                          <button
+                            type="button"
+                            class="btn btn-primary"
+                            data-bs-dismiss="modal"
+                          >
+                            Annuler
+                          </button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <p>69€</p>
-            </div>
-          </div>
-        </div>
-        <div class="col d-none d-sm-block">
-          <div class="card bg-secondary card-width">
-            <img src="/Images/cod6.webp" class="card-img-top" alt="..." />
-            <div
-              class="card-body d-flex flex-row d-flex justify-content-between"
-            >
-              <button class="btn btn-primary dimension">Info</button>
-              <div id="disponibilite">
-                <img src="/Images/pointvert.png" class="img" alt="disponible" />
-              </div>
-              <p>69€</p>
-            </div>
-          </div>
-        </div>
-        <div class="col d-none d-sm-block">
-          <div class="card bg-secondary card-width">
-            <img
-              src="/Images/cod6.webp"
-              class="card-img-top"
-              alt="..."
-            />
-            <div
-              class="card-body d-flex flex-row d-flex justify-content-between"
-            >
-              <button class="btn btn-primary dimension">Info</button>
               <div id="disponibilite">
                 <img src="/Images/pointvert.png" class="img" alt="disponible" />
               </div>
@@ -355,238 +288,6 @@
                 <img src="/Images/pointvert.png" class="img" alt="disponible" />
               </div>
               <p>69€</p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card bg-secondary card-width">
-            <img
-              src="/Images/61tONPHQ0DS._AC_SL1000_.jpg"
-              class="card-img-top"
-              alt="..."
-            />
-            <div
-              class="card-body d-flex flex-row d-flex justify-content-between"
-            >
-              <button class="btn btn-primary dimension">Info</button>
-              <div id="disponibilite">
-                <img src="/Images/pointvert.png" class="img" alt="disponible" />
-              </div>
-              <p>69€</p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card bg-secondary card-width">
-            <img
-              src="/Images/71FQmxAS5sS._AC_SL1429_.jpg"
-              class="card-img-top"
-              alt="..."
-            />
-            <div
-              class="card-body d-flex flex-row d-flex justify-content-between"
-            >
-              <button class="btn btn-primary dimension">Info</button>
-              <div id="disponibilite">
-                <img src="/Images/pointvert.png" class="img" alt="disponible" />
-              </div>
-              <p>69€</p>
-            </div>
-          </div>
-        </div>
-        <div class="col d-none d-sm-block">
-          <div class="card bg-secondary card-width">
-            <img src="/Images/cod6.webp" class="card-img-top" alt="..." />
-            <div
-              class="card-body d-flex flex-row d-flex justify-content-between"
-            >
-              <button class="btn btn-primary dimension">Info</button>
-              <div id="disponibilite">
-                <img src="/Images/pointvert.png" class="img" alt="disponible" />
-              </div>
-              <p>69€</p>
-            </div>
-          </div>
-        </div>
-        <div class="col d-none d-sm-block">
-          <div class="card bg-secondary card-width">
-            <img src="/Images/cod6.webp" class="card-img-top" alt="..." />
-            <div
-              class="card-body d-flex flex-row d-flex justify-content-between"
-            >
-              <button class="btn btn-primary dimension">Info</button>
-              <div id="disponibilite">
-                <img src="/Images/pointvert.png" class="img" alt="disponible" />
-              </div>
-              <p>69€</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="margin-box-wiewmore">
-        <a href=""><button class="btn btn-primary">Voir plus</button></a>
-      </div>
-    </div>
-  </article>
-  <div>
-    <h3 class="margin-article text-decoration-underline">
-      Jeux Xbox séries x/s
-    </h3>
-  </div>
-  <article>
-    <div class="container">
-      <div class="row row-cols-3 row-cols-sm-3 row-cols-lg-5">
-        <div class="col">
-          <div class="card bg-secondary card-width">
-            <img src="/Images/cod6.webp" class="card-img-top" alt="..." />
-            <div
-              class="card-body d-flex flex-row d-flex justify-content-between"
-            >
-              <button class="btn btn-primary dimension">Info</button>
-              <div id="disponibilite">
-                <img src="/Images/pointvert.png" class="img" alt="disponible" />
-              </div>
-              <p>69€</p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card bg-secondary card-width">
-            <img src="/Images/cod6.webp" class="card-img-top" alt="..." />
-            <div
-              class="card-body d-flex flex-row d-flex justify-content-between"
-            >
-              <button class="btn btn-primary dimension">Info</button>
-              <div id="disponibilite">
-                <img src="/Images/pointvert.png" class="img" alt="disponible" />
-              </div>
-              <p>69€</p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card bg-secondary card-width">
-            <img src="/Images/cod6.webp" class="card-img-top" alt="..." />
-            <div
-              class="card-body d-flex flex-row d-flex justify-content-between"
-            >
-              <button class="btn btn-primary dimension">Info</button>
-              <div id="disponibilite">
-                <img src="/Images/pointvert.png" class="img" alt="disponible" />
-              </div>
-              <p>69€</p>
-            </div>
-          </div>
-        </div>
-        <div class="col d-none d-sm-block">
-          <div class="card bg-secondary card-width">
-            <img src="/Images/cod6.webp" class="card-img-top" alt="..." />
-            <div
-              class="card-body d-flex flex-row d-flex justify-content-between"
-            >
-              <button class="btn btn-primary dimension">Info</button>
-              <div id="disponibilite">
-                <img src="/Images/pointvert.png" class="img" alt="disponible" />
-              </div>
-              <p>69€</p>
-            </div>
-          </div>
-        </div>
-        <div class="col d-none d-sm-block">
-          <div class="card bg-secondary card-width">
-            <img src="/Images/cod6.webp" class="card-img-top" alt="..." />
-            <div
-              class="card-body d-flex flex-row d-flex justify-content-between"
-            >
-              <button class="btn btn-primary dimension">Info</button>
-              <div id="disponibilite">
-                <img src="/Images/pointvert.png" class="img" alt="disponible" />
-              </div>
-              <p>69€</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="margin-box-wiewmore">
-        <a href=""><button class="btn btn-primary">Voir plus</button></a>
-      </div>
-    </div>
-  </article>
-  <div>
-    <h3 class="margin-article text-decoration-underline">Jeux Switch</h3>
-  </div>
-  <article>
-    <div class="container">
-      <div class="row row-cols-3 row-cols-sm-3 row-cols-lg-5">
-        <div class="col">
-          <div class="card bg-secondary card-width">
-            <img src="/Images/cod6.webp" class="card-img-top" alt="..." />
-            <div
-              class="card-body d-flex flex-row d-flex justify-content-between"
-            >
-              <button class="btn btn-primary dimension">Info</button>
-              <div id="disponibilite">
-                <img src="/Images/pointvert.png" class="img" alt="disponible" />
-              </div>
-              <p>69€</p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card bg-secondary card-width">
-            <img src="/Images/cod6.webp" class="card-img-top" alt="..." />
-            <div
-              class="card-body d-flex flex-row d-flex justify-content-between"
-            >
-              <button class="btn btn-primary dimension">Info</button>
-              <div id="disponibilite">
-                <img src="/Images/pointvert.png" class="img" alt="disponible" />
-              </div>
-              <p>69€</p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card bg-secondary card-width">
-            <img src="/Images/cod6.webp" class="card-img-top" alt="..." />
-            <div
-              class="card-body d-flex flex-row d-flex justify-content-between"
-            >
-              <button class="btn btn-primary dimension">Info</button>
-              <div id="disponibilite">
-                <img src="/Images/pointvert.png" class="img" alt="disponible" />
-              </div>
-              <p>69€</p>
-            </div>
-          </div>
-        </div>
-        <div class="col d-none d-sm-block">
-          <div class="card bg-secondary card-width">
-            <img src="/Images/cod6.webp" class="card-img-top" alt="..." />
-            <div
-              class="card-body d-flex flex-row d-flex justify-content-between"
-            >
-              <button class="btn btn-primary dimension">Info</button>
-              <div id="disponibilite">
-                <img src="/Images/pointvert.png" class="img" alt="disponible" />
-              </div>
-              <p>69€</p>
-            </div>
-          </div>
-        </div>
-        <div class="col d-none d-sm-block">
-          <div class="card bg-secondary card-width">
-            <img src="/Images/cod6.webp" class="card-img-top" alt="..." />
-            <div
-              class="card-body d-flex flex-row d-flex justify-content-between"
-            >
-              <button class="btn btn-primary dimension">Info</button>
-              <div id="disponibilite">
-                <img src="/Images/pointvert.png" class="img" alt="disponible" />
-              </div>
-              <div class="align-items-center">
-                <p>69€</p>
-              </div>
             </div>
           </div>
         </div>
