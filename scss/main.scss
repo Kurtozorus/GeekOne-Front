@@ -38,9 +38,6 @@ main {
     padding: 0px;
     margin-right: 5px;
 }
-.img-card {
-    width: 330px;
-}
 .hero-scene {
     position: relative;
     &::before {
@@ -106,15 +103,27 @@ main {
 .margin-box-wiewmore {
     margin-top: 20px;
 }
-// .card-width {
-//     width: 7rem;
-//}
-.card-img-top {
-    height: 181px;
-}
 .image-card {
-    width: 100px;
-    height: 100px;
+    position: relative;
+    &:hover {
+        .titre-image {
+            opacity: 1;
+        }
+        img {
+            filter: brightness(0.5);
+        }
+    }
+    img{
+        transition: all 0.3s;
+    }
+    .titre-image {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        transition: all 0.3s;
+    }
 }
 .modal-body-img {
     position: relative;
@@ -163,9 +172,6 @@ main {
     }
     .first, .second, .third {
         height: 650px;
-    }
-    .card-width {
-        width: 12rem;
     }
     .modal-body-img {
         left: 50%;
