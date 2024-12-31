@@ -9,9 +9,7 @@ p {
     font-family: $font-family-serif;
     font-size: 18px;
 }
-main {
-    margin-bottom: 500px;
-}
+
 footer.footer {
     padding-left:24px;
     padding-right:24px;
@@ -27,11 +25,19 @@ footer.footer-title {
 footer.font {
     font-family: $font-family-sans-serif;
 }
+main {
+    padding-bottom: 500px;
+}
 .home {
     font-family: $font-family-sans-serif;
     margin-left: 26px;
 }
-
+.dimension {
+    width: 13,8px;
+    height: 32px;
+    padding: 0px;
+    margin-right: 5px;
+}
 .hero-scene {
     position: relative;
     &::before {
@@ -60,18 +66,18 @@ footer.font {
     align-items: flex-start;
     }
 }
+.main-margin {
+    padding-top: 25px;
+    padding-left: 24px;
+    padding-right: 24px;
+}
 .custom-button {
     font-family: $font-family-serif;
     font-size: 10px;
 }
-
-.margin-content-title {
-    margin-top: 16px;
-    margin-bottom: 16px;
-}
 .img-size {
-    width: 514px;
-    height: 317px;
+    width: 320px;
+    height: 315px;
     margin-bottom: 24px;
     margin-right: 64px;
 }
@@ -81,13 +87,49 @@ footer.font {
     padding-top: 12px;
     padding-bottom: 12px;
 }
-
 .font-head {
     font-family:$font-family-sans-serif;
     font-size: 30px;
 }
 .font-content {
     font-family: $font-family-serif;
+}
+.first, .second, .third {
+    height: 240px;
+}
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    color:$primary;
+}
+.margin-box-wiewmore {
+    margin-top: 20px;
+}
+.image-card {
+    position: relative;
+    &:hover {
+        .titre-image {
+            opacity: 1;
+        }
+        img {
+            filter: brightness(0.5);
+        }
+    }
+    img{
+        transition: all 0.3s;
+    }
+    .titre-image {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        transition: all 0.3s;
+    }
+}
+.modal-body-img {
+    position: relative;
+    left: 50px;
+    width: 350px;
+    height: 200px;
 }
 @media only screen and (min-width: 992px) {
     .hero-scene {
@@ -112,15 +154,13 @@ footer.font {
         .font-hero-button{
             font-size: 20px;
         }
+       
     }
     .margin-article {
-        margin-left: 116px;
-        margin-right: 116px;
+        margin-left: 64px;
+        margin-right: 64px;
         margin-top: 64px;
         margin-bottom: 64px;
-    }
-    .margin-content {
-        padding-left: 64px;
     }
     .img-size {
         width: 544px;
@@ -130,5 +170,10 @@ footer.font {
         margin-top: 64px;
         margin-bottom: 64px;
     }
-    
+    .first, .second, .third {
+        height: 650px;
+    }
+    .modal-body-img {
+        left: 50%;
+    }
 }

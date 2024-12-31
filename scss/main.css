@@ -11976,10 +11976,6 @@ p {
   font-size: 18px;
 }
 
-main {
-  margin-bottom: 500px;
-}
-
 footer.footer {
   padding-left: 24px;
   padding-right: 24px;
@@ -11998,9 +11994,20 @@ footer.font {
   font-family: "Jomolhari", sans-serif;
 }
 
+main {
+  padding-bottom: 500px;
+}
+
 .home {
   font-family: "Jomolhari", sans-serif;
   margin-left: 26px;
+}
+
+.dimension {
+  width: 13, 8px;
+  height: 32px;
+  padding: 0px;
+  margin-right: 5px;
 }
 
 .hero-scene {
@@ -12032,19 +12039,20 @@ footer.font {
   align-items: flex-start;
 }
 
+.main-margin {
+  padding-top: 25px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
 .custom-button {
   font-family: "Inter", serif;
   font-size: 10px;
 }
 
-.margin-content-title {
-  margin-top: 16px;
-  margin-bottom: 16px;
-}
-
 .img-size {
-  width: 514px;
-  height: 317px;
+  width: 320px;
+  height: 315px;
   margin-bottom: 24px;
   margin-right: 64px;
 }
@@ -12063,6 +12071,46 @@ footer.font {
 
 .font-content {
   font-family: "Inter", serif;
+}
+
+.first, .second, .third {
+  height: 240px;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  color: #F1D302;
+}
+
+.margin-box-wiewmore {
+  margin-top: 20px;
+}
+
+.image-card {
+  position: relative;
+}
+.image-card:hover .titre-image {
+  opacity: 1;
+}
+.image-card:hover img {
+  filter: brightness(0.5);
+}
+.image-card img {
+  transition: all 0.3s;
+}
+.image-card .titre-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.modal-body-img {
+  position: relative;
+  left: 50px;
+  width: 350px;
+  height: 200px;
 }
 
 @media only screen and (min-width: 992px) {
@@ -12088,13 +12136,10 @@ footer.font {
     font-size: 20px;
   }
   .margin-article {
-    margin-left: 116px;
-    margin-right: 116px;
+    margin-left: 64px;
+    margin-right: 64px;
     margin-top: 64px;
     margin-bottom: 64px;
-  }
-  .margin-content {
-    padding-left: 64px;
   }
   .img-size {
     width: 544px;
@@ -12103,5 +12148,11 @@ footer.font {
   .margin-content-title {
     margin-top: 64px;
     margin-bottom: 64px;
+  }
+  .first, .second, .third {
+    height: 650px;
+  }
+  .modal-body-img {
+    left: 50%;
   }
 }/*# sourceMappingURL=main.css.map */
