@@ -84,7 +84,7 @@
       Carte Magic the Gathering
     </h3>
     <div class="text-center">
-      <button class="btn btn-primary mb-3">Ajouter une carte</button>
+      <button  type="button" class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#EditModal">Ajouter une carte</button>
     </div>
   </div>
   <article>
@@ -99,6 +99,10 @@
                 alt="..."
               />
               <p class="titre-image">Pokemon Evolutions</p>
+              <div class="action-image-buttons">
+                <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#ModifierModal"><i class="bi bi-pencil-square"></i></button>
+                <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#deleteModal"><i class="bi bi-trash"></i></button>
+              </div>
             </div>
             <div
               class="card-body d-flex flex-row d-flex justify-content-between"
@@ -160,19 +164,19 @@
                   </div>
                 </div>
               </div>
-              <!-- Modal Modication -->
+              <!-- Modal Edition -->
               <div
                 class="modal fade"
-                id="ModifierModal"
+                id="EditModal"
                 tabindex="-1"
-                aria-labelledby="ModifierModal"
+                aria-labelledby="EditModal"
                 aria-hidden="true"
               >
                 <div class="modal-dialog">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h2 class="modal-title fs-5" id="ModifierModal">
-                        Voulez-vous modifier cette photo ?
+                      <h2 class="modal-title fs-5" id="EditModal">
+                        Ajouter cette carte ?
                       </h2>
                       <button
                         type="button"
@@ -184,27 +188,106 @@
                     <div class="modal-body">
                       <form>
                         <div class="mb-3">
-                          <p>Titre</p>
-                          <img
-                            src="../images/deckpokemonevo.jpg"
-                            class="rounded w-100"
+                          <label for="NameProductInput" class="form-label">Titre du produit</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="NameProductInput"
+                            placeholder="Call of duty"
                           />
                         </div>
-                        <p>
-                          Pokemon XY12 "Evolutions" Boite De 36 Boosters = 360
-                          Cartes pour Pokemon TCG (Anglais).
-                        </p>
+                        <div class="mb-3">
+                          <label for="ImageInput" class="form-label">Image</label>
+                          <input type="file" class="form-control" id="ImageInput" />
+                        </div>
+                        <div class="mb-3">
+                          <label for="InformationInput" class="form-label">Information</label>
+                          <input type="text" class="form-control" id="InformationInput" />
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                          <label class="form-check-label" for="flexRadioDefault1">
+                            Disponibilité
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                          <label class="form-check-label" for="flexRadioDefault2">
+                            Non disponible
+                          </label>
+                        </div>
+                        <div class="mb-3">
+                          <label for="PriceInput" class="form-label">Prix</label>
+                          <input type="number" class="form-control" id="PriceInput" />
+                        </div>
                         <div class="text-center">
-                          <button type="button" class="btn btn-danger">
-                            Supprimer
-                          </button>
-                          <button
-                            type="button"
-                            class="btn btn-primary"
-                            data-bs-dismiss="modal"
-                          >
-                            Annuler
-                          </button>
+                            <button type="submit" class="btn btn-primary mb-3">Enregistrer</button>
+                            <button type="button" class="btn btn-secondary mb-3" data-bs-dismiss="modal">Annuler</button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Modal Modification -->
+              <div
+                class="modal fade"
+                id="ModifierModal"
+                tabindex="-1"
+                aria-labelledby="ModifierModal"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h2 class="modal-title fs-5" id="ModifierModal">
+                        Voulez-vous modifier cette carte ?
+                      </h2>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <form>
+                        <div class="mb-3">
+                          <label for="NameProductInput" class="form-label">Titre du produit</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="NameProductInput"
+                            placeholder="Call of duty"
+                          />
+                        </div>
+                        <div class="mb-3">
+                          <label for="ImageInput" class="form-label">Image</label>
+                          <input type="file" class="form-control" id="ImageInput" />
+                        </div>
+                        <div class="mb-3">
+                          <label for="InformationInput" class="form-label">Information</label>
+                          <input type="text" class="form-control" id="InformationInput" />
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                          <label class="form-check-label" for="flexRadioDefault1">
+                            Disponibilité
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                          <label class="form-check-label" for="flexRadioDefault2">
+                            Non disponible
+                          </label>
+                        </div>
+                        <div class="mb-3">
+                          <label for="PriceInput" class="form-label">Prix</label>
+                          <input type="number" class="form-control" id="PriceInput" />
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary mb-3">Enregistrer</button>
+                            <button type="button" class="btn btn-secondary mb-3" data-bs-dismiss="modal">Annuler</button>
                         </div>
                       </form>
                     </div>
@@ -214,16 +297,16 @@
               <!-- Modal Suppression -->
               <div
                 class="modal fade"
-                id="SupprimerModal1"
+                id="deleteModal"
                 tabindex="-1"
-                aria-labelledby="SupprimerModal1"
+                aria-labelledby="deleteModal"
                 aria-hidden="true"
               >
                 <div class="modal-dialog">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h2 class="modal-title fs-5" id="SupprimerModal1">
-                        Etes vous sur de vouloir supprimer cette photo ?
+                      <h2 class="modal-title fs-5" id="deleteModal">
+                        Etes vous sur de vouloir supprimer cette carte produit ?
                       </h2>
                       <button
                         type="button"

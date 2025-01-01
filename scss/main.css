@@ -12039,6 +12039,43 @@ main {
   align-items: flex-start;
 }
 
+.signin-scene {
+  position: relative;
+  margin-bottom: 15px;
+}
+.signin-scene::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 240px;
+  width: 100%;
+  background-image: url(../Images/chat.jpg);
+  background-position: center;
+  background-size: cover;
+  filter: brightness(0.5);
+}
+.signin-scene * {
+  position: relative;
+}
+.signin-scene .signin-scene-content {
+  padding-top: 65px;
+  padding-left: 24px;
+  padding-right: 24px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.form-label {
+  color: #F1D302;
+  font-family: "Jomolhari", sans-serif;
+}
+
 .main-margin {
   padding-top: 25px;
   padding-left: 24px;
@@ -12088,7 +12125,7 @@ main {
 .image-card {
   position: relative;
 }
-.image-card:hover .titre-image {
+.image-card:hover .titre-image, .image-card:hover .action-image-buttons {
   opacity: 1;
 }
 .image-card:hover img {
@@ -12102,6 +12139,17 @@ main {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all 0.3s;
+}
+.image-card .action-image-buttons {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
   opacity: 0;
   transition: all 0.3s;
 }
@@ -12133,6 +12181,24 @@ main {
     font-size: 96px;
   }
   .hero-scene .font-hero-button {
+    font-size: 20px;
+  }
+  .signin-scene .signin-scene-content {
+    padding-top: 100.5px;
+    padding-left: 116px;
+    padding-right: 104px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+  .signin-scene .font-hero {
+    font-size: 48px;
+  }
+  .signin-scene .font-hero-button {
     font-size: 20px;
   }
   .margin-article {

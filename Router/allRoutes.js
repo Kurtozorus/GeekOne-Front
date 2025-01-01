@@ -12,7 +12,11 @@ export const allRoutes = [
     new Route("/jeux-switch", "Jeux Switch", "/pages/Jeux-switch.html", [], "/js/galerie-jeux-video.js"),
     new Route("/jeux-de-carte", "Jeux de carte", "/pages/Jeux-de-carte.html", [], "/js/galerie-jeux-video.js"),
     new Route("/Les-incontournables", "Jeux de carte", "/pages/Les-incontournables.html", [], "/js/galerie-jeux-video.js"),
-    new Route("/Les-mangas", "Jeux de carte", "/pages/Les-mangas.html", [], "/js/galerie-jeux-video.js")];
+    new Route("/Les-mangas", "Jeux de carte", "/pages/Les-mangas.html", [], "/js/galerie-jeux-video.js"),
+    new Route("/signin", "Connexion", "/pages/auth/signin.html", [], "/js/galerie-jeux-video.js"),
+    new Route("/signup", "Inscription", "/pages/auth/signup.html", [], "/js/galerie-jeux-video.js"),
+    new Route("/account", "Mon compte", "/pages/auth/account.html", [], "/js/galerie-jeux-video.js"),
+    new Route("/editPassword", "Modifier le mot de passe", "/pages/auth/editPassword.html", [], "/js/galerie-jeux-video.js"),];
 
 //Le titre s'affiche comme ceci : Route.titre - Websitename
 export const websiteName = "GeekOne";
