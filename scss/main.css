@@ -12161,6 +12161,12 @@ main {
   height: 200px;
 }
 
+.allreservations a {
+  display: block;
+  color: #2D2828;
+  padding: 10px;
+}
+
 @media only screen and (min-width: 992px) {
   .hero-scene::before {
     height: 950px;

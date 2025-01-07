@@ -84,7 +84,14 @@
       Carte Magic the Gathering
     </h3>
     <div class="text-center">
-      <button  type="button" class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#EditModal">Ajouter une carte</button>
+      <button
+        type="button"
+        class="btn btn-primary mb-3"
+        data-bs-toggle="modal"
+        data-bs-target="#EditModal"
+      >
+        Ajouter une carte
+      </button>
     </div>
   </div>
   <article>
@@ -100,8 +107,22 @@
               />
               <p class="titre-image">Pokemon Evolutions</p>
               <div class="action-image-buttons">
-                <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#ModifierModal"><i class="bi bi-pencil-square"></i></button>
-                <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#deleteModal"><i class="bi bi-trash"></i></button>
+                <button
+                  type="button"
+                  class="btn btn-outline-light"
+                  data-bs-toggle="modal"
+                  data-bs-target="#ModifierModal"
+                >
+                  <i class="bi bi-pencil-square"></i>
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-outline-light"
+                  data-bs-toggle="modal"
+                  data-bs-target="#deleteModal"
+                >
+                  <i class="bi bi-trash"></i>
+                </button>
               </div>
             </div>
             <div
@@ -151,9 +172,16 @@
                           <button type="button" class="btn btn-success">
                             Réserver
                           </button>
+                          <button 
+                          type="button"
+                          class="btn btn-danger" 
+                          data-bs-toggle="modal"
+                          data-bs-target="#ValidateAnnulationModal">
+                            Annulation
+                          </button>
                           <button
                             type="button"
-                            class="btn btn-primary"
+                            class="btn btn-secondary"
                             data-bs-dismiss="modal"
                           >
                             Annuler
@@ -188,7 +216,9 @@
                     <div class="modal-body">
                       <form>
                         <div class="mb-3">
-                          <label for="NameProductInput" class="form-label">Titre du produit</label>
+                          <label for="NameProductInput" class="form-label"
+                            >Titre du produit</label
+                          >
                           <input
                             type="text"
                             class="form-control"
@@ -197,32 +227,75 @@
                           />
                         </div>
                         <div class="mb-3">
-                          <label for="ImageInput" class="form-label">Image</label>
-                          <input type="file" class="form-control" id="ImageInput" />
+                          <label for="ImageInput" class="form-label"
+                            >Image</label
+                          >
+                          <input
+                            type="file"
+                            class="form-control"
+                            id="ImageInput"
+                          />
                         </div>
                         <div class="mb-3">
-                          <label for="InformationInput" class="form-label">Information</label>
-                          <input type="text" class="form-control" id="InformationInput" />
+                          <label for="InformationInput" class="form-label"
+                            >Information</label
+                          >
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="InformationInput"
+                          />
                         </div>
                         <div class="form-check">
-                          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                          <label class="form-check-label" for="flexRadioDefault1">
-                            Disponibilité
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            name="disponibility"
+                            id="flexRadioDefault1"
+                          />
+                          <label
+                            class="form-check-label"
+                            for="flexRadioDefault1"
+                          >
+                            Disponible
                           </label>
                         </div>
                         <div class="form-check">
-                          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                          <label class="form-check-label" for="flexRadioDefault2">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            name="disponibility"
+                            id="flexRadioDefault2"
+                            checked
+                          />
+                          <label
+                            class="form-check-label"
+                            for="flexRadioDefault2"
+                          >
                             Non disponible
                           </label>
                         </div>
                         <div class="mb-3">
-                          <label for="PriceInput" class="form-label">Prix</label>
-                          <input type="number" class="form-control" id="PriceInput" />
+                          <label for="PriceInput" class="form-label"
+                            >Prix</label
+                          >
+                          <input
+                            type="number"
+                            class="form-control"
+                            id="PriceInput"
+                          />
                         </div>
                         <div class="text-center">
-                            <button type="submit" class="btn btn-primary mb-3">Enregistrer</button>
-                            <button type="button" class="btn btn-secondary mb-3" data-bs-dismiss="modal">Annuler</button>
+                          <button type="submit" class="btn btn-success mb-3">
+                            Enregistrer
+                          </button>
+                          <button
+                            type="button"
+                            class="btn btn-secondary mb-3"
+                            data-bs-dismiss="modal"
+                          >
+                            Annuler
+                          </button>
                         </div>
                       </form>
                     </div>
@@ -253,7 +326,9 @@
                     <div class="modal-body">
                       <form>
                         <div class="mb-3">
-                          <label for="NameProductInput" class="form-label">Titre du produit</label>
+                          <label for="NameProductInput" class="form-label"
+                            >Titre du produit</label
+                          >
                           <input
                             type="text"
                             class="form-control"
@@ -262,32 +337,75 @@
                           />
                         </div>
                         <div class="mb-3">
-                          <label for="ImageInput" class="form-label">Image</label>
-                          <input type="file" class="form-control" id="ImageInput" />
+                          <label for="ImageInput" class="form-label"
+                            >Image</label
+                          >
+                          <input
+                            type="file"
+                            class="form-control"
+                            id="ImageInput"
+                          />
                         </div>
                         <div class="mb-3">
-                          <label for="InformationInput" class="form-label">Information</label>
-                          <input type="text" class="form-control" id="InformationInput" />
+                          <label for="InformationInput" class="form-label"
+                            >Information</label
+                          >
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="InformationInput"
+                          />
                         </div>
                         <div class="form-check">
-                          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                          <label class="form-check-label" for="flexRadioDefault1">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            name="flexRadioDefault"
+                            id="flexRadioDefault1"
+                          />
+                          <label
+                            class="form-check-label"
+                            for="flexRadioDefault1"
+                          >
                             Disponibilité
                           </label>
                         </div>
                         <div class="form-check">
-                          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                          <label class="form-check-label" for="flexRadioDefault2">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            name="flexRadioDefault"
+                            id="flexRadioDefault2"
+                            checked
+                          />
+                          <label
+                            class="form-check-label"
+                            for="flexRadioDefault2"
+                          >
                             Non disponible
                           </label>
                         </div>
                         <div class="mb-3">
-                          <label for="PriceInput" class="form-label">Prix</label>
-                          <input type="number" class="form-control" id="PriceInput" />
+                          <label for="PriceInput" class="form-label"
+                            >Prix</label
+                          >
+                          <input
+                            type="number"
+                            class="form-control"
+                            id="PriceInput"
+                          />
                         </div>
                         <div class="text-center">
-                            <button type="submit" class="btn btn-primary mb-3">Enregistrer</button>
-                            <button type="button" class="btn btn-secondary mb-3" data-bs-dismiss="modal">Annuler</button>
+                          <button type="submit" class="btn btn-success mb-3">
+                            Enregistrer
+                          </button>
+                          <button
+                            type="button"
+                            class="btn btn-secondary mb-3"
+                            data-bs-dismiss="modal"
+                          >
+                            Annuler
+                          </button>
                         </div>
                       </form>
                     </div>
@@ -329,17 +447,103 @@
                           Cartes pour Pokemon TCG (Anglais).
                         </p>
                         <div class="text-center">
-                          <button type="button" class="btn btn-danger">
+                          <button 
+                          type="button"  
+                          class="btn btn-danger"
+                          data-bs-toggle="modal"
+                          data-bs-target="#ValidateSuppressionModal">
                             Supprimer
                           </button>
                           <button
                             type="button"
-                            class="btn btn-primary"
+                            class="btn btn-secondary"
                             data-bs-dismiss="modal"
                           >
                             Annuler
                           </button>
                         </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Modal Validation Suppression -->
+              <div
+                class="modal fade"
+                id="ValidateSuppressionModal"
+                tabindex="-1"
+                aria-labelledby="ValidateSuppressionModal"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h2
+                        class="modal-title fs-5"
+                        id="ValidateSuppressionModal"
+                      >
+                        Voulez-vous vraiment supprimer cette carte ?
+                      </h2>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <form>
+                        <button type="button" class="btn btn-danger">
+                          Supprimer
+                        </button>
+                        <button
+                          type="button"
+                          class="btn btn-secondary"
+                          data-bs-dismiss="modal"
+                        >
+                          Annuler
+                        </button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Modal Validation Annulation -->
+              <div
+                class="modal fade"
+                id="ValidateAnnulationModal"
+                tabindex="-1"
+                aria-labelledby="ValidateAnnulationModal"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h2
+                        class="modal-title fs-5"
+                        id="ValidateAnnulationModal"
+                      >
+                        Voulez-vous vraiment annuler cette réservation ?
+                      </h2>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <form>
+                        <button type="button" class="btn btn-danger">
+                          Valider l'annulation
+                        </button>
+                        <button
+                          type="button"
+                          class="btn btn-secondary"
+                          data-bs-dismiss="modal"
+                        >
+                          Annuler
+                        </button>
                       </form>
                     </div>
                   </div>
