@@ -89,6 +89,7 @@
         class="btn btn-primary mb-3"
         data-bs-toggle="modal"
         data-bs-target="#EditModal"
+        data-show="admin"
       >
         Ajouter une carte
       </button>
@@ -112,6 +113,7 @@
                   class="btn btn-outline-light"
                   data-bs-toggle="modal"
                   data-bs-target="#ModifierModal"
+                  data-show="admin"
                 >
                   <i class="bi bi-pencil-square"></i>
                 </button>
@@ -120,6 +122,7 @@
                   class="btn btn-outline-light"
                   data-bs-toggle="modal"
                   data-bs-target="#deleteModal"
+                  data-show="admin"
                 >
                   <i class="bi bi-trash"></i>
                 </button>
@@ -169,16 +172,31 @@
                           Cartes pour Pokemon TCG (Anglais).
                         </p>
                         <div class="text-center">
-                          <button type="button" class="btn btn-success">
+                          <button
+                          type="button"
+                          class="btn btn-success"
+                          data-show="connected"
+                          >
                             Réserver
                           </button>
+                          <a href="/signin">
                           <button 
                           type="button"
-                          class="btn btn-danger" 
-                          data-bs-toggle="modal"
-                          data-bs-target="#ValidateAnnulationModal">
-                            Annulation
+                          class="btn btn-primary"
+                          data-show="disconnected" 
+                          >
+                          Connnectez-vous
                           </button>
+                        </a>
+                        <a href="/signup">
+                          <button 
+                          type="button"
+                          class="btn btn-dark"
+                          data-show="disconnected" 
+                          >
+                          Inscrivez-vous
+                          </button>
+                        </a>
                           <button
                             type="button"
                             class="btn btn-secondary"
@@ -508,47 +526,6 @@
                   </div>
                 </div>
               </div>
-              <!-- Modal Validation Annulation -->
-              <div
-                class="modal fade"
-                id="ValidateAnnulationModal"
-                tabindex="-1"
-                aria-labelledby="ValidateAnnulationModal"
-                aria-hidden="true"
-              >
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h2
-                        class="modal-title fs-5"
-                        id="ValidateAnnulationModal"
-                      >
-                        Voulez-vous vraiment annuler cette réservation ?
-                      </h2>
-                      <button
-                        type="button"
-                        class="btn-close"
-                        data-bs-dismiss="modal"
-                        aria-label="Close"
-                      ></button>
-                    </div>
-                    <div class="modal-body">
-                      <form>
-                        <button type="button" class="btn btn-danger">
-                          Valider l'annulation
-                        </button>
-                        <button
-                          type="button"
-                          class="btn btn-secondary"
-                          data-bs-dismiss="modal"
-                        >
-                          Annuler
-                        </button>
-                      </form>
-                    </div>
-                  </div>
-                </div>
-              </div>
               <div id="disponibilite">
                 <img src="/Images/pointvert.png" class="img" alt="disponible" />
               </div>
@@ -565,7 +542,7 @@
   <div>
     <h3 class="margin-article text-decoration-underline">Carte Pokemon</h3>
     <div class="text-center">
-      <button class="btn btn-primary mb-3">Ajouter une carte</button>
+      <button class="btn btn-primary mb-3" data-show="admin">Ajouter une carte</button>
     </div>
   </div>
   <article>

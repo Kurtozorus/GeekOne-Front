@@ -2,7 +2,7 @@ import Route from "./Route.js";
 import { allRoutes, websiteName } from "./allRoutes.js";
 
 // Création d'une route pour la page 404 (page introuvable)
-const route404 = new Route("404", "Page introuvable", "/pages/404.html");
+const route404 = new Route("404", "Page introuvable", "/pages/404.html",[]);
 
 // Fonction pour récupérer la route correspondant à une URL donnée
 const getRouteByUrl = (url) => {
@@ -25,18 +25,33 @@ const getRouteByUrl = (url) => {
 const LoadContentPage = async () => {
   const path = window.location.pathname;
   // Récupération de l'URL actuelle
-  const actualRoute = getRouteByUrl(path);
+  const actualRoute = getRouteByUrl(path)
+  // Vérifier les droits d'accès à la page
+  const allRolesArray = actualRoute.authorize;
+  if (allRolesArray.length > 0) {
+    if(allRolesArray.includes("disconnected")) {
+      if (isConnected()) {
+        window.location.replace("/");
+      }
+    }
+    else {
+      const roleUser = getRole();
+      if(!allRolesArray.includes(roleUser)) {
+        window.location.replace("/");
+      }
+    }
+  }
   // Récupération du contenu HTML de la route
   const html = await fetch(actualRoute.pathHtml).then((data) => data.text());
   // Ajout du contenu HTML à l'élément avec l'ID "main-page"
   document.getElementById("main-page").innerHTML = html;
 
   // Ajout du contenu JavaScript
-  if (actualRoute.pathJs != "") {
+  if (actualRoute.pathJS != "") {
     // Création d'une balise script
     let scriptTag = document.createElement("script");
     scriptTag.setAttribute("type", "text/javascript");
-    scriptTag.setAttribute("src", actualRoute.pathJs);
+    scriptTag.setAttribute("src", actualRoute.pathJS);
 
     // Ajout de la balise script au corps du document
     document.querySelector("body").appendChild(scriptTag);
@@ -44,6 +59,9 @@ const LoadContentPage = async () => {
 
   // Changement du titre de la page
   document.title = actualRoute.title + " - " + websiteName;
+  
+  // Afficher et masquer les éléments en fonction du rôle
+  showAndHideElementsForRoles();
 };
 
 // Fonction pour gérer les événements de routage (clic sur les liens)

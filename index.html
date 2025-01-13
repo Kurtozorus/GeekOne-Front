@@ -14,6 +14,12 @@
   </head>
 
   <body>
+    <div class="loader">
+      <button class="btn btn-primary" type="button" disabled>
+        <span class="spinner-grow spinner-grow-sm" aria-hidden="true"></span>
+        <span chargement="status">Chargement...</span>
+      </button>
+    </div>
     <header>
       <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
         <div class="container-fluid">
@@ -95,43 +101,40 @@
                   </li>
                 </ul>
               </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link active dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Manga
-                </a>
-                <ul class="dropdown-menu">
-                  <li>
-                    <a class="dropdown-item" href="/galerie-mangas"
-                      >Nos mangas</a
-                    >
-                  </li>
-                </ul>
-              </li>
               <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/galerie-mangas"
+                >Nos mangas</a
+                >
+              </li>
+
+              <li class="nav-item" data-show="ROLE_USER">
                 <a class="nav-link active" aria-current="page" href="/resa"
                   >Ma réservation</a
                 >
               </li>
-              <li class="nav-item">
+              <li class="nav-item" data-show="admin">
                 <a class="nav-link active" aria-current="page" href="/allResa"
                   >Réservation</a
                 >
               </li>
-              <li class="nav-item">
+              <li class="nav-item" data-show="connected">
                 <a class="nav-link active" aria-current="page" href="/account"
                   >Mon compte</a
                 >
               </li>
-              <li class="nav-item">
+              <li class="nav-item" data-show="disconnected">
                 <a class="nav-link active" aria-current="page" href="/signin"
                   >Connexion</a
                 >
+              </li>
+              <li class="nav-item" data-show="connected">
+                <button
+                  class="nav-link active"
+                  aria-current="page"
+                  id="signout-btn"
+                >
+                  Deconnexion
+                </button>
               </li>
             </ul>
           </div>
@@ -143,7 +146,7 @@
       <div class="row">
         <div class="col-12">
           <h3 class="text-primary font footer-title">GeekOne</h3>
-          <br>
+          <br />
         </div>
       </div>
       <div class="row">
@@ -164,7 +167,7 @@
       </div>
     </footer>
     <script src="/js/script.js"></script>
-    <script type="module" src="Router/router.js"></script>
+    <script type="module" src="Router/Router.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
